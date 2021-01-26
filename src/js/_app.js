@@ -7,7 +7,7 @@ import Sliders from './Sliders';
 import Forms from './Forms';
 import Nav from './Nav';
 import Transitions from './Transitions';
-import Canvas from './canvas/index'
+require('./canvas/index')
 
 export default class App {
 	constructor() {
@@ -18,7 +18,6 @@ export default class App {
 	initBody() {
 		const sliders = new Sliders();
 		const forms = new Forms();
-		const canvas = new Canvas();
 		const aoe = new Aoe();
 		aoe.init({});
 	}
@@ -29,9 +28,6 @@ export default class App {
 	}
 
 	initDev() {
-		utils.$('.nav__item', function (e) {
-			console.log(e);
-		})
 	}
 }
 
