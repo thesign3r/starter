@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
-<include src="./components/header/header.html"></include>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Title</title>
+	<meta name="description"
+		content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ut officia corporis omnis possimus ducimus?">
+
+	<!-- opengraph -->
+	<meta property="og:url" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:image" content="">
+	<meta property="og:description" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:locale" content="">
+
+	<!-- top bar -->
+	<meta name="theme-color" content="#4285f4">
+	<link rel="stylesheet" href="./css/_app.scss">
+</head>
 
 <body>
 
 	<header class="header">
 		<div class="header__body">
-			<include src="components/header/logo.html"></include>
-			<div class="flex">
-				<include src="components/header/nav.html"></include>
-			</div>
+			<a href="index.html" aria-label="Logo - Link Home" class="logo">
+				<img src="./img/sample.jpg" alt="">
+			</a>
+			<include src="components/header/nav.html"></include>
 		</div>
 	</header>
 
 	<div data-barba="wrapper">
-		<main class="main" data-barba="container" data-barba-namespace="home">
+		<main class="main" data-barba="container">
 
 			<div class="hero">
 				<!-- Slider main container -->
