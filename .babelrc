@@ -1,5 +1,14 @@
 {
 	"presets": [
-		"@babel/preset-env"
-	]
+    [
+      "@babel/env",
+      {
+        "useBuiltIns": "usage",
+        "targets": {
+          "browsers": "last 2 versions, safari >= 9, ios_saf >= 9, chrome >= 52, ie >= 10"
+        },
+        "loose": true
+      }
+    ]
+  ]
 }
