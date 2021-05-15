@@ -1,13 +1,13 @@
 import './../css/_app.scss'
 // import * as basicScroll from 'basicscroll'
-import utils from './utils';
+// import utils from './utils';
 import Aoe from 'aoejs';
 
 import Sliders from './Sliders';
 import Forms from './Forms';
 import Nav from './Nav';
 import Transitions from './Transitions';
-require('./canvas/index')
+// require('./canvas/index')
 
 export default class App {
 	constructor() {
