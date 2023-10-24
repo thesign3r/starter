@@ -1,14 +1,1 @@
 .footer {}
-
-.author {
-	margin-bottom: 10px;
-	display: flex;
-
-
-	&__link {
-		@include hover-underline;
-
-	}
-
-	&__name {}
-}

@@ -1,3 +1,13 @@
-.form {
-	&__row {}
+.form {}
+
+.input {
+	&[type="text"] {}
+
+	&[type="email"] {}
+
+	&[type="number"] {}
+
+	&[type="submit"] {}
+
+	textarea {}
 }

@@ -1,11 +1,12 @@
 $header: 120px;
+
 .header {
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	z-index: $toplayer;
-	background: #fff;
+	background: transparent;
 	padding: 0 5%;
 
 	&__body {
@@ -33,7 +34,6 @@ $header: 120px;
 		display: flex;
 		align-items: center;
 	}
-
 
 	&__item {
 		margin-left: $menuGap;

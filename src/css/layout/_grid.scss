@@ -36,11 +36,16 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 
+	&.wrap {
+		flex-wrap: wrap;
+	}
+
 	&--center {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 	}
+
 	@include media($colBreak, min) {
 		@for $i from 1 to 13 {
 			&--#{$i} {
@@ -49,6 +54,7 @@ body {
 		}
 	}
 }
+
 
 .align {
 	&--start {

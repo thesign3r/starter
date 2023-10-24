@@ -26,50 +26,6 @@
 	}
 }
 
-/*
-* Flexbox row system
-*/
-@mixin flex($align:'start', $space:'start') {
-	display: flex;
-	flex-wrap: wrap;
-
-	@if $align=='center' {
-		align-items: center;
-	}
-
-	@if $align=='start' {
-		align-items: flex-start;
-	}
-
-	@if $align=='end' {
-		align-items: flex-end;
-	}
-
-	@if $align=='strech' {
-		align-items: stretch;
-	}
-
-	@if $space=='center' {
-		justify-content: center;
-	}
-
-	@if $space=='space' {
-		justify-content: space-between;
-	}
-
-	@if $space=='end' {
-		justify-content: flex-end;
-	}
-}
-
-/*
-* Column width system
-*/
-@mixin col($items) {
-	@include media($mobile, min) {
-		width: calc(8.3333333% * #{$items});
-	}
-}
 
 /*
 * Styles input placeholder
@@ -108,15 +64,6 @@
 
 
 /*
-* Sets item width and height 
-*/
-@mixin box($width, $height:$width, $display:inline-flex) {
-	width: $width;
-	height: $height;
-	display: $display;
-}
-
-/*
 * Includes animation with params
 */
 @mixin keyframes($name, $params) {
@@ -149,6 +96,10 @@
   @return $value / ($value * 0 + 1);
 }
 
+$min_width: 320px;
+$max_width: 1024px;
+$min_font: 16px;
+$max_font: 22px;
 @mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
   $u1: unit($min-vw);
   $u2: unit($max-vw);
@@ -170,10 +121,6 @@
   }
 }
 
-$min_width: 320px;
-$max_width: 1000px;
-$min_font: 16px;
-$max_font: 22px;
 
 @mixin fixed {
 	position: fixed;
